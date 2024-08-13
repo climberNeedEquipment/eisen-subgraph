@@ -1,0 +1,7 @@
+{
+  "network": "mantle",
+  "address": "0x31d6F212142D3B222EF11c9eBB6AF3569b8442EE",
+  "startBlock": 64201716,
+  "file": "ExecutorFacet",
+  "tokenEvent": "EisenSwapCompleted(indexed address,indexed address,indexed address,address,uint256,uint256,uint256,uint256)"
+}

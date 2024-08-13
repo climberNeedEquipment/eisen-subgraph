@@ -1,0 +1,7 @@
+{
+  "network": "blast",
+  "address": "0xd57Ed7F46D64Ec7b6f04E4A8409D88C55Ef8AA3b",
+  "startBlock": 3258143,
+  "file": "ExecutorFacet",
+  "tokenEvent": "EisenSwapCompleted(indexed address,indexed address,indexed address,address,uint256,uint256,uint256,uint256)"
+}

@@ -1,0 +1,7 @@
+{
+  "network": "scroll",
+  "address": "0xA06568773A247657E7b89BBA465014CF85702093",
+  "startBlock": 67559,
+  "file": "ExecutorFacet",
+  "tokenEvent": "EisenSwapCompleted(indexed address,indexed address,indexed address,address,uint256,uint256,uint256,uint256)"
+}

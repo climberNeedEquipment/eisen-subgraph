@@ -1,0 +1,37 @@
+specVersion: 0.0.4
+description: Eisen Swap
+repository: https://github.com/climberNeedEquipment/eisen-subgraph
+schema:
+  file: ./schema.graphql
+features:
+  - nonFatalErrors
+  - grafting
+dataSources:
+  - kind: ethereum/contract
+    name: Eisen
+    network: "{{network}}"
+    source:
+      address: "{{address}}"
+      abi: ExecutorFacet
+      startBlock: "{{ startBlock }}"
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.8
+      language: wasm/assemblyscript
+      entities:
+        - Swapper
+        - Swap
+        - Token
+      abis:
+        - name: ExecutorFacet
+          file: ./abis/{{file}}.json
+        - name: ERC20
+          file: ./abis/ERC20.json
+        - name: ERC20SymbolBytes
+          file: ./abis/ERC20SymbolBytes.json
+        - name: ERC20NameBytes
+          file: ./abis/ERC20NameBytes.json
+      eventHandlers:
+        - event: "{{tokenEvent}}"
+          handler: handleSwapCompleted
+      file: ./src/mapping.ts

@@ -1,0 +1,41 @@
+type Swapper @entity {
+  id: ID! # This will be the sender's address
+  swaps: [Swap!]! @derivedFrom(field: "sender")
+  transactionCount: BigInt!
+}
+
+type Swap @entity {
+  id: ID!
+  sender: Swapper!
+  fromAssetId: Bytes!
+  toAssetId: Bytes!
+  receiver: Bytes!
+  fromAmount: BigInt!
+  toAmount: BigInt!
+  expectedToAmount: BigInt!
+  fee: BigInt!
+  # block txn was included in
+  blockNumber: BigInt!
+  # timestamp txn was confirmed
+  timestamp: BigInt!
+  # gas used during txn execution
+  gasUsed: BigInt!
+  gasPrice: BigInt!
+}
+
+type Token @entity {
+  # token address
+  id: ID!
+  # token symbol
+  symbol: String!
+  # token name
+  name: String!
+  # token decimals
+  decimals: BigInt!
+  # transactions across all pools that include this token
+  txCount: BigInt!
+  # transactions across all pools that include this token
+  sellVolume: BigInt!
+  # transactions across all pools that include this token
+  buyVolume: BigInt!
+}
