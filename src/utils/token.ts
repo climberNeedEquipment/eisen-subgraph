@@ -26,7 +26,8 @@ export function fetchTokenSymbol(tokenAddress: Address): string {
         symbolValue = symbolResultBytes.value.toString();
       }
     } else {
-      symbolValue = NATIVE_ASSETS[contract.];
+      // symbolValue = NATIVE_ASSETS[contract];
+      symbolValue = "ETH";
     }
   } else {
     symbolValue = symbolResult.value;
