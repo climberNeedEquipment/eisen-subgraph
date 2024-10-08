@@ -13,7 +13,7 @@ dataSources:
     source:
       address: "{{address}}"
       abi: ExecutorFacet
-      startBlock: "{{ startBlock }}"
+      startBlock: {{ startBlock }}
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.8

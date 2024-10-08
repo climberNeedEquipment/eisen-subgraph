@@ -3,7 +3,7 @@ import { Address, BigInt } from "@graphprotocol/graph-ts";
 import { ERC20 } from "../../generated/Eisen/ERC20";
 import { ERC20NameBytes } from "../../generated/Eisen/ERC20NameBytes";
 import { ERC20SymbolBytes } from "../../generated/Eisen/ERC20SymbolBytes";
-import { NATIVE_ASSETS } from "../config";
+
 export function isNullEthValue(value: string): boolean {
   return (
     value ==
