@@ -1,0 +1,7 @@
+{
+  "network": "zircuit",
+  "address": "0x6bD912872B9e704a70f10226ab01A2Db87D0dd1C",
+  "startBlock": 6744024,
+  "file": "ExecutorFacet",
+  "tokenEvent": "EisenSwapCompleted(indexed address,indexed address,indexed address,address,uint256,uint256,uint256,uint256)"
+}

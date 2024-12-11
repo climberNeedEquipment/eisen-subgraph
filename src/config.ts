@@ -5,6 +5,10 @@ export enum CHAINS {
   MANTLE = 5000,
   LINEA = 59144,
   BLAST = 81457,
+  TAIKO = 167000,
+  CORE = 1116,
+  BASE = 8453,
+  ZIRCUIT = 48900,
 }
 
 export enum PROTOCOLS {
@@ -27,17 +31,37 @@ export const SUBGRAPH_URLS: {
   },
   [CHAINS.MANTLE]: {
     [PROTOCOLS.EISEN]: {
-      url: "https://api.goldsky.com/api/public/project_clwacwnf0qmq701yza5d82yf3/subgraphs/eisen-mantle/1.0.0/gn",
+      url: "https://api.goldsky.com/api/public/project_clzsr5mz1d13n01os5q4qar6v/subgraphs/eisen-mantle/1.0.0/gn",
     },
   },
   [CHAINS.LINEA]: {
     [PROTOCOLS.EISEN]: {
-      url: "https://api.goldsky.com/api/public/project_clwacwnf0qmq701yza5d82yf3/subgraphs/eisen-linea/1.0.0/gn",
+      url: "https://api.goldsky.com/api/public/project_clzsr5mz1d13n01os5q4qar6v/subgraphs/eisen-linea/1.0.0/gn",
     },
   },
   [CHAINS.BLAST]: {
     [PROTOCOLS.EISEN]: {
-      url: "https://api.goldsky.com/api/public/project_clwacwnf0qmq701yza5d82yf3/subgraphs/eisen-blast/1.0.0/gn",
+      url: "https://api.goldsky.com/api/public/project_clzsr5mz1d13n01os5q4qar6v/subgraphs/eisen-blast/1.0.0/gn",
+    },
+  },
+  [CHAINS.TAIKO]: {
+    [PROTOCOLS.EISEN]: {
+      url: "https://api.goldsky.com/api/public/project_cm20c6gxf9a9y0107bthk8060/subgraphs/eisen-taiko/1.0.0/gn",
+    },
+  },
+  [CHAINS.CORE]: {
+    [PROTOCOLS.EISEN]: {
+      url: "https://thegraph.coredao.org/subgraphs/name/eisen-core",
+    },
+  },
+  [CHAINS.BASE]: {
+    [PROTOCOLS.EISEN]: {
+      url: "https://api.goldsky.com/api/public/project_cm4a7o3u1kwjq01y9c5it8g47/subgraphs/eisen-base/1.0.0/gn",
+    },
+  },
+  [CHAINS.ZIRCUIT]: {
+    [PROTOCOLS.EISEN]: {
+      url: "https://api.goldsky.com/api/public/project_cm4a7o3u1kwjq01y9c5it8g47/subgraphs/eisen-ziruit/1.0.0/gn",
     },
   },
 };
@@ -51,6 +75,10 @@ export const RPC_URLS: {
   [CHAINS.MANTLE]: "https://1rpc.io/mantle",
   [CHAINS.LINEA]: "https://rpc.linea.build",
   [CHAINS.BLAST]: "https://rpc.blast.io",
+  [CHAINS.TAIKO]: "https://rpc.taiko.xyz",
+  [CHAINS.CORE]: "https://1rpc.io/core",
+  [CHAINS.BASE]: "https://base-rpc.publicnode.com",
+  [CHAINS.ZIRCUIT]: "https://rpc.ziruit.io",
 };
 
 // Correct typing for NATIVE_ASSETS
@@ -62,4 +90,8 @@ export const NATIVE_ASSETS: {
   [CHAINS.MANTLE]: "MNT",
   [CHAINS.LINEA]: "ETH",
   [CHAINS.BLAST]: "ETH",
+  [CHAINS.TAIKO]: "ETH",
+  [CHAINS.CORE]: "CORE",
+  [CHAINS.BASE]: "ETH",
+  [CHAINS.ZIRCUIT]: "ETH",
 };

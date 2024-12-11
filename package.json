@@ -10,7 +10,11 @@
     "prepare:mainnet": "mustache config/mainnet.json subgraph.template.yaml > subgraph.yaml",
     "prepare:mantle": "mustache config/mantle.json subgraph.template.yaml > subgraph.yaml",
     "prepare:blast": "mustache config/blast.json subgraph.template.yaml > subgraph.yaml",
-    "prepare:goerli": "mustache config/goerli.json subgraph.template.yaml > subgraph.yaml"
+    "prepare:goerli": "mustache config/goerli.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:taiko": "mustache config/taiko.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:core": "mustache config/core.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:base": "mustache config/base.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:zircuit": "mustache config/zircuit.json subgraph.template.yaml > subgraph.yaml"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.71.0",
