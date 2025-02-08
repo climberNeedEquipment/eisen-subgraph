@@ -1,0 +1,7 @@
+{
+  "network": "berachain-mainnet",
+  "address": "0xE53744A85a12FCC38005d180c18f04F8EF0FB719",
+  "startBlock": 778600,
+  "file": "ExecutorFacet",
+  "tokenEvent": "EisenSwapCompleted(indexed address,indexed address,indexed address,address,uint256,uint256,uint256,uint256)"
+}

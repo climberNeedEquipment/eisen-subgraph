@@ -9,6 +9,7 @@ export enum CHAINS {
   CORE = 1116,
   BASE = 8453,
   ZIRCUIT = 48900,
+  BERA = 80094,
 }
 
 export enum PROTOCOLS {
@@ -61,7 +62,12 @@ export const SUBGRAPH_URLS: {
   },
   [CHAINS.ZIRCUIT]: {
     [PROTOCOLS.EISEN]: {
-      url: "https://api.goldsky.com/api/public/project_cm4a7o3u1kwjq01y9c5it8g47/subgraphs/eisen-ziruit/1.0.0/gn",
+      url: "https://api.goldsky.com/api/public/project_cm4a7o3u1kwjq01y9c5it8g47/subgraphs/eisen-zircuit/1.0.0/gn",
+    },
+  },
+  [CHAINS.BERA]: {
+    [PROTOCOLS.EISEN]: {
+      url: "https://api.goldsky.com/api/public/project_cm20c6gxf9a9y0107bthk8060/subgraphs/eisen-bera/1.0.0/gn",
     },
   },
 };
@@ -79,6 +85,7 @@ export const RPC_URLS: {
   [CHAINS.CORE]: "https://1rpc.io/core",
   [CHAINS.BASE]: "https://base-rpc.publicnode.com",
   [CHAINS.ZIRCUIT]: "https://rpc.ziruit.io",
+  [CHAINS.BERA]: "https://rpc.berachain.com",
 };
 
 // Correct typing for NATIVE_ASSETS
@@ -94,4 +101,5 @@ export const NATIVE_ASSETS: {
   [CHAINS.CORE]: "CORE",
   [CHAINS.BASE]: "ETH",
   [CHAINS.ZIRCUIT]: "ETH",
+  [CHAINS.BERA]: "BERA",
 };
