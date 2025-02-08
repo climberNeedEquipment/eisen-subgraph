@@ -1,5 +1,5 @@
 {
-  "network": "base",
+  "network": "taiko",
   "address": "0xFA0e9251503DaE51670d10288e6962d63191731d",
   "startBlock": 427268,
   "file": "ExecutorFacet",
