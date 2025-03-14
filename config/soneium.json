@@ -1,0 +1,7 @@
+{
+  "network": "soneium",
+  "address": "0x7e36665858d17fd1cbfd4fd464d2a3da49aa3b9d",
+  "startBlock": 1944100,
+  "file": "ExecutorFacet",
+  "tokenEvent": "EisenSwapCompleted(indexed address,indexed address,indexed address,address,uint256,uint256,uint256,uint256)"
+}

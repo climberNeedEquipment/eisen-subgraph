@@ -15,7 +15,8 @@
     "prepare:core": "mustache config/core.json subgraph.template.yaml > subgraph.yaml",
     "prepare:base": "mustache config/base.json subgraph.template.yaml > subgraph.yaml",
     "prepare:zircuit": "mustache config/zircuit.json subgraph.template.yaml > subgraph.yaml",
-    "prepare:bera": "mustache config/bera.json subgraph.template.yaml > subgraph.yaml"
+    "prepare:bera": "mustache config/bera.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:soneium": "mustache config/soneium.json subgraph.template.yaml > subgraph.yaml"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.71.0",
