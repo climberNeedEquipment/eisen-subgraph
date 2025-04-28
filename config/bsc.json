@@ -1,0 +1,7 @@
+{
+  "network": "bsc",
+  "address": "0xf1afd3bbeefe61042b2b29f42d65f71ac5bc881e",
+  "startBlock": 48044281,
+  "file": "ExecutorFacet",
+  "tokenEvent": "EisenSwapCompleted(indexed address,indexed address,indexed address,address,uint256,uint256,uint256,uint256)"
+}

@@ -12,6 +12,7 @@ export enum CHAINS {
   BERA = 80094,
   SONEIUM = 1868,
   ROOTSTOCK = 30,
+  BSC = 56,
 }
 
 export enum PROTOCOLS {
@@ -82,6 +83,11 @@ export const SUBGRAPH_URLS: {
       url: "https://api.goldsky.com/api/public/project_cm4a7o3u1kwjq01y9c5it8g47/subgraphs/eisen-rootstock/1.0.0/gn",
     },
   },
+  [CHAINS.BSC]: {
+    [PROTOCOLS.EISEN]: {
+      url: "https://api.goldsky.com/api/public/project_cma18yu4fn8vf01rc2ip76s59/subgraphs/eisen-bsc/1.0.0/gn",
+    },
+  },
 };
 
 // Correct typing for RPC_URLS
@@ -100,6 +106,7 @@ export const RPC_URLS: {
   [CHAINS.BERA]: "https://rpc.berachain.com",
   [CHAINS.SONEIUM]: "https://rpc.soneium.org",
   [CHAINS.ROOTSTOCK]: "https://rootstock-mainnet.public.blastapi.io",
+  [CHAINS.BSC]: "https://bsc-dataseed1.defibit.io",
 };
 
 // Correct typing for NATIVE_ASSETS
@@ -118,4 +125,5 @@ export const NATIVE_ASSETS: {
   [CHAINS.BERA]: "BERA",
   [CHAINS.SONEIUM]: "ETH",
   [CHAINS.ROOTSTOCK]: "RBTC",
+  [CHAINS.BSC]: "BNB",
 };
