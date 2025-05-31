@@ -1,10 +1,10 @@
-type Swapper @entity {
+type Swapper @entity(immutable: false) {
   id: ID! # This will be the sender's address
   swaps: [Swap!]! @derivedFrom(field: "sender")
   transactionCount: BigInt!
 }
 
-type Swap @entity {
+type Swap @entity(immutable: true) {
   id: ID!
   sender: Swapper!
   fromAssetId: Bytes!
@@ -23,7 +23,7 @@ type Swap @entity {
   gasPrice: BigInt!
 }
 
-type Token @entity {
+type Token @entity(immutable: false) {
   # token address
   id: ID!
   # token symbol

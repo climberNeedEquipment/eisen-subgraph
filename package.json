@@ -20,7 +20,8 @@
     "prepare:rootstock": "mustache config/rootstock.json subgraph.template.yaml > subgraph.yaml",
     "prepare:bsc": "mustache config/bsc.json subgraph.template.yaml > subgraph.yaml",
     "prepare:arbitrum": "mustache config/arbitrum.json subgraph.template.yaml > subgraph.yaml",
-    "prepare:hyperevm": "mustache config/hyperevm.json subgraph.template.yaml > subgraph.yaml"
+    "prepare:hyperevm": "mustache config/hyperevm.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:hemi": "mustache config/hemi.json subgraph.template.yaml > subgraph.yaml"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.71.0",

@@ -1,0 +1,14 @@
+type EisenSwapCompleted @entity(immutable: true) {
+  id: Bytes!
+  sender: Bytes! # address
+  fromAssetId: Bytes! # address
+  toAssetId: Bytes! # address
+  receiver: Bytes! # address
+  fromAmount: BigInt! # uint256
+  toAmount: BigInt! # uint256
+  expectedToAmount: BigInt! # uint256
+  fee: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
