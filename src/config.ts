@@ -14,6 +14,7 @@ export enum CHAINS {
   ROOTSTOCK = 30,
   BSC = 56,
   ARBITRUM = 42161,
+  HYPEREVM = 999,
 }
 
 export enum PROTOCOLS {
@@ -94,6 +95,11 @@ export const SUBGRAPH_URLS: {
       url: "https://api.goldsky.com/api/public/project_cma18yu4fn8vf01rc2ip76s59/subgraphs/eisen-arbitrum/1.0.0/gn",
     },
   },
+  [CHAINS.HYPEREVM]: {
+    [PROTOCOLS.EISEN]: {
+      url: "https://api.goldsky.com/api/public/project_cma18yu4fn8vf01rc2ip76s59/subgraphs/eisen-hyperevm/1.0.0/gn",
+    },
+  },
 };
 
 // Correct typing for RPC_URLS
@@ -114,6 +120,7 @@ export const RPC_URLS: {
   [CHAINS.ROOTSTOCK]: "https://rootstock-mainnet.public.blastapi.io",
   [CHAINS.BSC]: "https://bsc-dataseed1.defibit.io",
   [CHAINS.ARBITRUM]: "https://arbitrum.meowrpc.com",
+  [CHAINS.HYPEREVM]: "https://rpc.hyperliquid.xyz/evm",
 };
 
 // Correct typing for NATIVE_ASSETS
@@ -134,4 +141,5 @@ export const NATIVE_ASSETS: {
   [CHAINS.ROOTSTOCK]: "RBTC",
   [CHAINS.BSC]: "BNB",
   [CHAINS.ARBITRUM]: "ETH",
+  [CHAINS.HYPEREVM]: "HYPE",
 };

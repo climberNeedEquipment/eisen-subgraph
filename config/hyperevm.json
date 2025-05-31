@@ -1,0 +1,7 @@
+{
+  "network": "hyperevm",
+  "address": "0x1fa40f83c12e48e9396d12dd08b4b4ee51c8c803",
+  "startBlock": 4022677,
+  "file": "ExecutorFacet",
+  "tokenEvent": "EisenSwapCompleted(indexed address,indexed address,indexed address,address,uint256,uint256,uint256,uint256)"
+}
