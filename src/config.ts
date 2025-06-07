@@ -16,6 +16,7 @@ export enum CHAINS {
   ARBITRUM = 42161,
   HYPEREVM = 999,
   HEMI = 43111,
+  ABSTRACT = 2741,
 }
 
 export enum PROTOCOLS {
@@ -103,7 +104,12 @@ export const SUBGRAPH_URLS: {
   },
   [CHAINS.HEMI]: {
     [PROTOCOLS.EISEN]: {
-      url: "https://gateway.thegraph.com/api/24f74e602e4353307c03dfcf34321c5e/subgraphs/id/[id]",
+      url: "https://gateway.thegraph.com/api/[api-key]/subgraphs/id/3dGHuP7d83thmc45PnPvHktMKkUyaDmV4EcU1bgzJjE7",
+    },
+  },
+  [CHAINS.ABSTRACT]: {
+    [PROTOCOLS.EISEN]: {
+      url: "https://api.goldsky.com/api/public/project_cmbmcuxeqxlkc01ur3rzwf86i/subgraphs/eisen-abstract/1.0.0/gn",
     },
   },
 };
@@ -128,6 +134,7 @@ export const RPC_URLS: {
   [CHAINS.ARBITRUM]: "https://arbitrum.meowrpc.com",
   [CHAINS.HYPEREVM]: "https://rpc.hyperliquid.xyz/evm",
   [CHAINS.HEMI]: "https://rpc.hemi.network/rpc",
+  [CHAINS.ABSTRACT]: "https://api.mainnet.abs.xyz",
 };
 
 // Correct typing for NATIVE_ASSETS
@@ -150,4 +157,5 @@ export const NATIVE_ASSETS: {
   [CHAINS.ARBITRUM]: "ETH",
   [CHAINS.HYPEREVM]: "HYPE",
   [CHAINS.HEMI]: "ETH",
+  [CHAINS.ABSTRACT]: "ETH",
 };

@@ -1,0 +1,7 @@
+{
+  "network": "abstract",
+  "address": "0x82808c2f5777b816d55fcf54928567a50d18e31d",
+  "startBlock": 9804400,
+  "file": "ExecutorFacet",
+  "tokenEvent": "EisenSwapCompleted(indexed address,indexed address,indexed address,address,uint256,uint256,uint256,uint256)"
+}
