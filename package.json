@@ -22,7 +22,8 @@
     "prepare:arbitrum": "mustache config/arbitrum.json subgraph.template.yaml > subgraph.yaml",
     "prepare:hyperevm": "mustache config/hyperevm.json subgraph.template.yaml > subgraph.yaml",
     "prepare:hemi": "mustache config/hemi.json subgraph.template.yaml > subgraph.yaml",
-    "prepare:abstract": "mustache config/abstract.json subgraph.template.yaml > subgraph.yaml"
+    "prepare:abstract": "mustache config/abstract.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:plume": "mustache config/plume.json subgraph.template.yaml > subgraph.yaml"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.71.0",

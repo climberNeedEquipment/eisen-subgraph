@@ -1,0 +1,7 @@
+{
+  "network": "plume-mainnet",
+  "address": "0x90ba9922ae475d0dd91a6bf20dcd0fb872bc18b0",
+  "startBlock": 5909900,
+  "file": "ExecutorFacet",
+  "tokenEvent": "EisenSwapCompleted(indexed address,indexed address,indexed address,address,uint256,uint256,uint256,uint256)"
+}

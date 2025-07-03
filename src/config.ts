@@ -17,6 +17,7 @@ export enum CHAINS {
   HYPEREVM = 999,
   HEMI = 43111,
   ABSTRACT = 2741,
+  PLUME = 98866,
 }
 
 export enum PROTOCOLS {
@@ -112,6 +113,11 @@ export const SUBGRAPH_URLS: {
       url: "https://api.goldsky.com/api/public/project_cmbmcuxeqxlkc01ur3rzwf86i/subgraphs/eisen-abstract/1.0.0/gn",
     },
   },
+  [CHAINS.PLUME]: {
+    [PROTOCOLS.EISEN]: {
+      url: "https://api.goldsky.com/api/public/project_cm88jh8lx3fs101tzanpea9de/subgraphs/eisen-plume/1.0.0/gn",
+    },
+  },
 };
 
 // Correct typing for RPC_URLS
@@ -135,6 +141,7 @@ export const RPC_URLS: {
   [CHAINS.HYPEREVM]: "https://rpc.hyperliquid.xyz/evm",
   [CHAINS.HEMI]: "https://rpc.hemi.network/rpc",
   [CHAINS.ABSTRACT]: "https://api.mainnet.abs.xyz",
+  [CHAINS.PLUME]: "https://rpc.plume.org",
 };
 
 // Correct typing for NATIVE_ASSETS
@@ -158,4 +165,5 @@ export const NATIVE_ASSETS: {
   [CHAINS.HYPEREVM]: "HYPE",
   [CHAINS.HEMI]: "ETH",
   [CHAINS.ABSTRACT]: "ETH",
+  [CHAINS.PLUME]: "PLUME",
 };
