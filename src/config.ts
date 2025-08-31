@@ -110,7 +110,7 @@ export const SUBGRAPH_URLS: {
   },
   [CHAINS.ABSTRACT]: {
     [PROTOCOLS.EISEN]: {
-      url: "https://api.goldsky.com/api/public/project_cmbmcuxeqxlkc01ur3rzwf86i/subgraphs/eisen-abstract/1.0.0/gn",
+      url: "https://api.goldsky.com/api/public/project_clwacwnf0qmq701yza5d82yf3/subgraphs/eisen-abstract/1.0.0/gn",
     },
   },
   [CHAINS.PLUME]: {
