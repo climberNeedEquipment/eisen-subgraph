@@ -18,6 +18,7 @@ export enum CHAINS {
   HEMI = 43111,
   ABSTRACT = 2741,
   PLUME = 98866,
+  KATANA = 747474,
 }
 
 export enum PROTOCOLS {
@@ -118,6 +119,11 @@ export const SUBGRAPH_URLS: {
       url: "https://api.goldsky.com/api/public/project_cm88jh8lx3fs101tzanpea9de/subgraphs/eisen-plume/1.0.0/gn",
     },
   },
+  [CHAINS.KATANA]: {
+    [PROTOCOLS.EISEN]: {
+      url: "https://gateway.thegraph.com/api/d04f73308d55522254ee41d5b2f15a71/subgraphs/id/H5UiZyJ6oXjNbX7oTrGE3PWb57pBvtE1Lsnpj9C9xhVn",
+    },
+  },
 };
 
 // Correct typing for RPC_URLS
@@ -142,6 +148,7 @@ export const RPC_URLS: {
   [CHAINS.HEMI]: "https://rpc.hemi.network/rpc",
   [CHAINS.ABSTRACT]: "https://api.mainnet.abs.xyz",
   [CHAINS.PLUME]: "https://rpc.plume.org",
+  [CHAINS.KATANA]: "https://rpc.katana.network",
 };
 
 // Correct typing for NATIVE_ASSETS
@@ -166,4 +173,5 @@ export const NATIVE_ASSETS: {
   [CHAINS.HEMI]: "ETH",
   [CHAINS.ABSTRACT]: "ETH",
   [CHAINS.PLUME]: "PLUME",
+  [CHAINS.KATANA]: "ETH",
 };

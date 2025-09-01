@@ -1,0 +1,7 @@
+{
+  "network": "katana",
+  "address": "0x11145aa7eef8a3c61ffef3f74981755e3148d358",
+  "startBlock": 7048100,
+  "file": "ExecutorFacet",
+  "tokenEvent": "EisenSwapCompleted(indexed address,indexed address,indexed address,address,uint256,uint256,uint256,uint256)"
+}
